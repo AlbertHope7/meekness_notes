@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     # local apps
     "accounts.apps.AccountsConfig",
     "notes.apps.NotesConfig",
+    # 3rd party
+    "rest_framework",
 ]
 
 MIDDLEWARE = [
@@ -131,3 +133,10 @@ AUTH_USER_MODEL = "accounts.CustomUser"
 # media or images configs
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
+
+# rest configs
+REST_FRAMEWORK = {
+    "DEFAULT_PERMISSION_CLASSES": [
+        "rest_framework.permissions.AllowAny",
+    ],
+}
