@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     # local apps
     "accounts.apps.AccountsConfig",
+    "notes.apps.NotesConfig",
 ]
 
 MIDDLEWARE = [
